@@ -1,6 +1,6 @@
 # README
 
-
+Trainer -> Program -> Client
 
 Migrations -> References: create Trainer_id and Client_id when generating Class model/migration
     => http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-migration
