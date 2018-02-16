@@ -1,7 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+
+
+Migrations -> References: create Trainer_id and Client_id when generating Class model/migration
+    => http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-migration
+Devise Multiple Users ->
+    => https://github.com/plataformatec/devise/wiki/How-to-Setup-Multiple-Devise-User-Models
+
+
 
 Things you may want to cover:
 
