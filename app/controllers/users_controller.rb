@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
     def new
-        @user = User.new(user_params)
     end
 
     def create
@@ -11,6 +10,7 @@ class UsersController < ApplicationController
             redirect_to root_path
         else
             render 'signup'
+        end
     end
 
     private
