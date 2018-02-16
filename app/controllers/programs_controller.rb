@@ -1,5 +1,6 @@
 class ProgramsController < ApplicationController
-    before_action :set_program, only: [:edit, :update, :destroy]
+    before_action :set_program, only: [:show, :edit, :update, :destroy]
+
     def index
         @programs = Program.all
     end
@@ -18,6 +19,9 @@ class ProgramsController < ApplicationController
             flash[:alert] = "Success"
             render 'new'
         end
+    end
+
+    def show
     end
 
     def edit
@@ -42,7 +46,7 @@ class ProgramsController < ApplicationController
     private
 
     def program_params
-        params.require(:program).permit(:name)
+        params.require(:program).permit(:name, :total_spots)
     end
 
     def set_program
